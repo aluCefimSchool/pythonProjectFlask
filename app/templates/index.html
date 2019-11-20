@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
 <h1>Flask test</h1>
@@ -22,8 +26,8 @@
         <li>{{ value }}</li>
     {% endfor %}
 </ul>
-
 <hr/>
+
 
 <table>
     {% for line in visual_table %}
@@ -40,5 +44,10 @@
     </tr>
     {% endfor %}
 </table>
+
+<a href="{{ url_for('.r_test') }}">C'est un lien</a>
+<hr/>
+
 </body>
+
 </html>
